@@ -56,6 +56,7 @@ assign s[2] = ~e[2]&e[1] | e[2]&~e[0];
 assign p[0]  =  ~a&~e[0] | ~a&e[1] | e[2];
 assign p[1]  =  ~a&~e[0] | e[2];
 assign p[2] =   ~e[0];
+	//total de operadores = 1+5+5+7+4+1 = 23 operadores
 ff  e0(p[0],clk,res,e[0]);
 ff  e1(p[1],clk,res,e[1]);
 ff  e2(p[2],clk,res,e[2]);
